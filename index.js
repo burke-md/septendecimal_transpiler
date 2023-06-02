@@ -7,6 +7,6 @@ const rl = readline.createInterface({
 });
 
 rl.question(`Enter EVM bytecode (base 16) WITHOUT '0x' at begining...`, bytecode_16 => {
-  console.log(`You've entered: ${convertBase(bytecode_16, 16, 17)}`);
+  console.log(`New bytecode in base17: ${convertBase(bytecode_16, 16, 17)}`);
   rl.close();
 });
